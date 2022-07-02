@@ -1,4 +1,4 @@
-var fileGenerator = require("./fileGenerator.js");
+var gen = require("./fileGenerator.js");
 var fs = require("fs");
 var inquirer = require('inquirer');
 // const process = require("process");
@@ -13,8 +13,8 @@ let questions = [
         name: "title"
     },{
         type: "input",
-        message: "Table of contents",
-        name: "table of contents"
+        message: "What's your username?",
+        name: "userName"
     },{
         type: "input",
         message: "Project Description",
@@ -22,7 +22,7 @@ let questions = [
     },{
         type: "input",
         message: "User Story",
-        name: "usage"
+        name: "userStory"
     },{
         type: "input",
         message: "Credits",
@@ -43,7 +43,7 @@ let questions = [
         type: "list",
         name: "license",
         message: "Which license you'd like to use?",
-        licenses: [
+        choices: [
             "MIT License",
             "Apache License 2.0",
             "Mozilla Public License 2.0",
@@ -52,31 +52,21 @@ let questions = [
         ],
     },{
         type: "input",
-        message: "Screenshot1",
-        name: "scriptjs"
-    },{
-        type: "input",
-        message: "Screenshot2",
-        name: "fileGenerator"
-    },{
-        type: "input",
-        message: "Screenshot3",
-        name: "ReadMe"
+        message: "Screenshot",
+        name: "screenshot"
     },{
         type: "input",
         message: "Accomplishments",
-        name: "accomplish"
+        name: "accomplishments"
     }
 ];
 
 // Heere below is my README.md file function:
 
-inquirer.prompt(questions).then(function(reponse) {
-    console.log(reponse);
+inquirer.prompt(questions).then(function(response) {
 
-    var content = file.Generator(response);
-    console.log(content);
-    fs.writeFile("./ReadMe.md", content, function(err) {
+    var content = gen.fileGenerator(response);
+    fs.writeFile("./README.md", content, function(err) {
         if (err) throw Error
         console.log("success");
     });

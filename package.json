@@ -1,5 +1,24 @@
 {
   "dependencies": {
-    "inquirer": "^9.0.0"
-  }
+    "inquirer": "^8.2.4"
+  },
+  "name": "professional_readme_generator_starter_code",
+  "description": "[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheAnswer07/professional_ReadMe_Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheAnswer07/professional_ReadMe_Generator/issues"
+  },
+  "homepage": "https://github.com/TheAnswer07/professional_ReadMe_Generator#readme"
 }
