@@ -15,8 +15,8 @@ ${response.license}
 * [Features](#features)
 * [Contribution](#contribution)
 * [GitHub Profile Link](#github-profile)
-* [Screenshot](#screenshot)
-* [Accomplishments](#accomplishments)
+* [Screenshots](#screenshots)
+* [Links](#links)
   
 ### Project Description
 ${response.description}
@@ -36,11 +36,11 @@ ${response.contribution}
 ### GitHub Profile Link
 [GitHub](${response.github})
 
-### Screenshot
-![screenshot](${response.screenshot} "Project Screenshot")
+### Screenshots
+![screenshots](${response.screenshots} "Project Screenshot")
 
-### Accomplishments
-${response.accomplishments}
+### Links
+${response.links}
 `
 return content;
 

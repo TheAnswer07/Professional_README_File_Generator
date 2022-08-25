@@ -52,12 +52,12 @@ let questions = [
         ],
     },{
         type: "input",
-        message: "Screenshot",
-        name: "screenshot"
+        message: "Screenshots",
+        name: "screenshots"
     },{
         type: "input",
-        message: "Accomplishments",
-        name: "accomplishments"
+        message: "Links",
+        name: "links"
     }
 ];
 
