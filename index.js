@@ -46,7 +46,7 @@ let questions = [
     },{
         type: "list",
         name: "license",
-        message: "Which license you'd like to use?",
+        message: "Which license did you use for this project?",
         choices: [
             "MIT License",
             "Apache License 2.0",
@@ -66,7 +66,7 @@ let questions = [
     }
 ];
 
-// Heere below is my README.md file function:
+// Here below is my README.md file function:
 
 inquirer.prompt(questions).then(function(response) {
 

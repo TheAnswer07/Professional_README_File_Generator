@@ -6,7 +6,7 @@ function fileGenerator(response) {
 #### README_Generator
 
 ### License Used
-${response.license}
+<img src="https://img.shields.io/badge/${response.license}-blue.svg">
 
 ## Table of Contents:
 * [Project Description](#project-description)
