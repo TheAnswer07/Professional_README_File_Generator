@@ -17,6 +17,10 @@ let questions = [
         name: "userName"
     },{
         type: "input",
+        message: "What's your email address?",
+        name: "email"
+    },{
+        type: "input",
         message: "Project Description",
         name: "description"
     },{
@@ -49,6 +53,7 @@ let questions = [
             "Mozilla Public License 2.0",
             "The Unlicense",
             "GNU AGPLv3",
+            "None"
         ],
     },{
         type: "input",
