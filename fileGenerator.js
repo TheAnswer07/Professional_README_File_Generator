@@ -9,12 +9,13 @@ function fileGenerator(response) {
 <img src="https://img.shields.io/badge/${response.license}-blue.svg">
 
 ## Table of Contents:
-* [Project Description](#project-description)
+* [Project Description](#description)
 * [User Story](#username)
 * [Credits](#credits)
 * [Features](#features)
 * [Contribution](#contribution)
-* [GitHub Profile Link](#github-profile)
+* [GitHub Profile Link](#github)
+* [Walkthrough Video Link](#video)
 * [Screenshots](#screenshots)
 * [Links](#links)
   
@@ -35,6 +36,9 @@ ${response.contribution}
 
 ### GitHub Profile Link
 [GitHub](${response.github})
+
+### Walkthrough Video Link
+[Walkthrough Video Link](${response.video})
 
 ### Screenshots
 ![screenshots](${response.screenshots} "Project Screenshot")
